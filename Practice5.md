@@ -184,9 +184,9 @@
         // ​	var arr = ["鹿晗","王俊凯","蔡徐坤","彭于晏","周杰伦","刘德华","赵本山"]；
         // ​	注意：不要有重复的学员
         var arr = ["鹿晗", "王俊凯", "蔡徐坤", "彭于晏", "周杰伦", "刘德华", "赵本山"];
-        var newArr=[];//创建一个新数组用来接收随机选出来的值
+        var newArr = [];//创建一个新数组用来接收随机选出来的值
         while(newArr.length < 4) {//判断条件：当数组大于等于4的时候跳出循环
-            var num=Math.floor(Math.random() * arr.length) //随机生成0-7个数组的索引号，是可重复的
+            var num = Math.floor(Math.random() * arr.length) //随机生成0-7个数组的索引号，是可重复的
             if(newArr.indexOf(arr[num])=== -1){//判断新数组中是否在旧数组中存在，当返回值（不存在-1）如果不存在就执行下面
                 newArr.push(arr[num]);//把旧数组的元素用push()方法推给新数组newArr
             }
